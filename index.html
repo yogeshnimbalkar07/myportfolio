@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Yogesh Nimbalkar Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+	
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+.about-img img {
+    border-radius: 50%; /* This makes the image round */
+    border-width: 2px; /* Adjust the border width as needed */
+}
+	@media (max-width: 768px) {
+    .ftco-footer-social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .ftco-footer-social li {
+        margin-right: 10px; /* Optional: Adjust spacing between icons */
+    }
+}
+.ftco-footer-social {
+    font-size: 14px; /* Adjust the font size as needed */
+}
+
+.ftco-footer-social li {
+    margin-right: 10px; /* Adjust the spacing between icons */
+}
+	
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+    <div class="container">
+        <a class="navbar-brand" href="index.html"></a>
+
+        <!-- Toggle menu button -->
+        <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="oi oi-menu"></span> Menu
+        </button>
+
+        <div class="collapse navbar-collapse" id="ftco-nav">
+            <ul class="navbar-nav nav ml-auto">
+                <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+                <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+                <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+                <li class="nav-item"><a href="#course-section" class="nav-link"><span>Courses</span></a></li>
+				<li class="nav-item"><a href="#exp-section" class="nav-link"><span>Experiences</span></a></li>
+                <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+                <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+				
+            </ul>
+        </div>
+    </div>
+</nav> 
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/herobgimg2.jpg);">
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Yogesh Nimbalkar</span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'AWS DevOps Engineer ',
+						'Cloud Infrastructure Specialist  ',
+						'Expert Web Developer   ',
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			            <h2>Empowering Cloud Solutions and Web Experiences</h2>
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+						<!-- <br> -->
+			            <br>
+							<ul class="ftco-footer-social list-unstyled d-flex  mb-0">
+							  <li class="ftco-animate normal-txt"> </li>
+						
+							  <li class="ftco-animate"><a href="https://www.linkedin.com/in/yogesh-nimbalkar-9930b1127/" target="_blank"><span class="icon-linkedin"></span></a></li>  
+							  <li class="ftco-animate"><a href="https://www.behance.net/yogeshnimbalkar" target="_blank"><span class="icon-behance"></span></a></li>
+							  <li class="ftco-animate"><a href="https://github.com/yogeshnimbalkar07" target="_blank"><span class="icon-github"></span></a></li>
+							  <li class="ftco-animate"><a href="https://www.instagram.com/nimbalkar_ya/" target="_blank"><span class="icon-instagram"></span></a></li>
+							</ul>
+						<br>
+							
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+									  <div class="about-img">
+										<img src="images/new.png" class="img-fluid rounded b-shadow-a" alt="">
+									  &nbsp;
+									  </div>
+									</div>
+									
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-12">
+									  <div class="about-info">
+										
+										<p><span class="title-s"><b>Name : </b></span> <span>Yogesh Nimbalkar</span></p>
+											
+										<p><span class="title-s"><b>Address : </b></span> <span>Pune, India</span></p>
+											
+										<p><span class="title-s"><b>Birth Date : </b></span> <span>September 27th, 1992</span></p>
+
+										<p><span class="title-s"><b>Website: </b><a href="https://github.com/yogeshnimbalkar07" target="_blank">https://github.com/yogeshnimbalkar07</a></span></p>
+
+									  </div>
+									</div>
+								  </div>
+
+								<div class="skill-mf">
+									<p class="about-info mt-4 px-md-0 px-2" style="color: white; font-weight: bold;">Skills</p>
+
+									<span>Cloud & DevOps</span> <span class="pull-right">75%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Web Development</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+
+									<span>HTML</span> <span class="pull-right">95%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>CSS</span> <span class="pull-right">90%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Javascript</span> <span class="pull-right">75%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+
+									<span>Wordpress</span> <span class="pull-right">95%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+								<p>As an AWS DevOps Engineer and Web Developer with expertise in cloud infrastructure, CI/CD automation, and responsive web design, I am passionate about building scalable, secure, and efficient solutions. With hands-on experience in AWS services, Docker, and Infrastructure as Code, along with a solid background in designing user-friendly websites, I strive to enhance operational efficiency and deliver impactful digital experiences.</p>
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span>Profile:</span> <span>AWS DevOps</span></li>
+									<li class="d-flex"><span>Domain:</span> <span>Specializing in web development &amp cloud-based solutions</span></li>
+									<li class="d-flex"><span>Education:</span> <span>Bachelor of Engineering </span></li>
+									<li class="d-flex"><span>Language:</span> <span>English, Hindi, Marathi</span></li>
+									
+									<li class="d-flex"><span>Other Skills:</span> <span>Infrastructure as Code (Terraform), CI/CD Automation & Deployment, Responsive Web Development, Version Control & Collaboration (Git, GitHub), Cloud Monitoring & Optimization (CloudWatch) UI/UX Design & Website Optimization.</span></li>
+									<li class="d-flex"><span>Interest:</span> <span>Listening Music, Cricket, Make a New Friends</span></li>
+									
+								</ul>
+							</div>
+						</div>
+
+
+						
+					</div>
+				</div> 
+			</div>
+		</div>
+    </section>
+
+
+
+	
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2>
+            <p>Results-driven AWS DevOps Engineer aiming to leverage cloud infrastructure and CI/CD expertise to enhance software delivery and operational efficiency.</p>
+			<div class="row justify-content-center mt-5">
+				<div class="col-md-6 text-center ftco-animate">
+					<p><a href="images/Yogesh-AWSDevOps-CV.pdf" target="_blank" class="btn btn-primary py-4 px-5">VIEW CV</a></p>
+				</div>
+			</div>
+          </div>
+        </div>
+
+		<section id="course-section">
+
+		</section>
+		<div class="row">
+			<h1 class="big-4">Courses & Internship</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row">
+			<div class="col-md-6">
+				<div class="resume-wrap ftco-animate">
+					<span class="date">AWS Certified Solutions Architect – Associate </span>
+					<br>
+					<!-- <h2>January 2023</h2> -->
+					<h2 class="position">Tech Bodhi Solutions.</h2>
+					<p class="mt-4"> AWS Certified Solutions Architect – Associate skilled in designing secure, scalable, and cost-effective cloud architectures on AWS.</p>
+        
+                      <!-- What I Learned Section -->
+                        <h3 class="date">What I Learned:</h3>
+
+					<ul>
+						<li>Managed AWS cloud services (EC2, S3, VPC, IAM) for scalable environments. </li>
+						<li>Automated CI/CD pipelines using Jenkins and GitHub Actions. </li>
+						<li>Containerized applications with Docker and deployed using AWS ECS. </li>
+						<li>Provisioned cloud infrastructure using Terraform for scalability. </li>
+						<li>Utilized Git and GitHub for version control and team collaboration.</li>
+					</ul>
+				</div>
+				
+			</div>
+
+			<div class="col-md-6">
+				<div class="resume-wrap ftco-animate">
+					<span class="date">AWS DevOps Intern </span>
+					<!-- <h2> March 2023</h2> -->
+					<h2 class="position">TMoksh Technologies PVT. LTD.</h2>
+					<p class="mt-4">AWS DevOps Intern with hands-on experience in deploying, automating, and managing applications on AWS using CI/CD pipelines, Terraform, and Docker.</p>
+					<h3 class="date">What I Learned:</h3>
+					<ul>
+						<li>Managed AWS cloud infrastructure including EC2, S3, VPC, and IAM to ensure scalable and secure application hosting environments. </li>
+						<li>Automated CI/CD pipelines using Jenkins and GitHub Actions for seamless deployments and faster release cycles. </li>
+						<li>Containerized applications with Docker, AWS-managed container orchestration service(ECS) and gained basic experience in Kubernetes orchestration. </li>
+						<li>Provisioned and managed cloud infrastructure using Terraform in AWS, creating reusable modules for scalability and best practices. </li>
+						<li>Proficient in Git for version control and tracking source code changes, with experience in using GitHub for repository management and collaboration</li>
+
+					</ul>
+				</div>
+			</div>
+
+		</div>
+
+		<section id="exp-section">
+
+		</section>
+		<div class="row">
+			<h1 class="big-4">Experiences</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+
+		<div class="row">
+			<div class="col-md-6">
+				<div class="resume-wrap ftco-animate">
+					<span class="date">AWS DevOps Intern</span>
+					<!-- <h2>may 2023</h2> -->
+					<h2 class="position">TMoksh Technologies PVT. LTD.</h2>
+					<p class="mt-4">May 2024 – Present</p>
+        
+                    <h3 class="date">Roles and Responsibilities:</h3>
+					<ul>
+						<li>Managed AWS cloud infrastructure including EC2, S3, VPC, and IAM to ensure
+							scalable and secure application hosting environments</li>
+                        <li>Automated CI/CD pipelines using Jenkins and GitHub Actions for seamless
+							deployments and faster release cycles.</li>
+                        <li>Containerized applications with Docker, AWS-managed container orchestration
+							service(ECS) and gained basic experience in Kubernetes orchestration.</li>
+                        <li>Provisioned and managed cloud infrastructure using Terraform in AWS, creating
+							reusable modules for scalability and best practices.</li>
+                        <li>Proficient in Git for version control and tracking source code changes, with
+							experience in using GitHub for repository management and collaboration.</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="col-md-6">
+				<div class="resume-wrap ftco-animate">
+					<span class="date">Senior Associate - Website Developer</span>
+					<!-- <h2>june 2023</h2> -->
+					<h2 class="position">Global Advertisement Services Pvt. Ltd.(AffinityX), Pune.</h2>
+					<p class="mt-4">Jul 2020 – Oct 2023</p>
+        
+                     <h3 class="date">Roles and Responsibilities:</h3>
+					<ul>
+						<li>Worked on GoDaddy projects, designing and developing responsive websites. </li>
+                        <li>Developed responsive websites using WordPress and page builders.</li>
+                        <li>Coded using HTML, CSS, and JavaScript, ensuring client requirements were met.</li>
+                    
+				    </ul>
+				</div>
+			</div>
+
+			
+
+			<div class="col-md-6">
+				<div class="resume-wrap ftco-animate">
+					<span class="date">Website Engineer</span>
+					<!-- <h2>july2024</h2> -->
+					<h2 class="position">The Clever Space, Pune</h2>
+					<p class="mt-4">Feb 2019 – Jun 2020</p>
+        
+                     <h3 class="date">Roles and Responsibilities:</h3>
+					<ul>
+						<li>Built and customized WordPress websites, optimized performance, and implemented
+							website architecture.</li>
+
+					</ul>
+				</div>
+			</div>
+
+			<div class="col-md-6">
+				<div class="resume-wrap ftco-animate">
+					<span class="date">Associate Software Engineer
+						
+						</span>
+					<!-- <h2>January2024 </h2> -->
+					<h2 class="position">Mograsys Technology, Pune</h2>
+					<p class="mt-4">June 2018- Oct 2018</p>
+        
+                    <h3 class="date">Roles and Responsibilities:</h3>
+					<ul>
+						<li>Developed modules using HTML, CSS, and AngularJS, resolved client issues, and
+							optimized applications. </li>
+                        
+
+					</ul>
+				</div>
+			</div>
+
+		
+        </div>
+
+		<br>
+		<br>
+
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2013-2016 </span>
+    					<h2>BE-Computer Engineering</h2>
+    					<span class="position">DR. D.Y Patil School of Engineering, Pune</span>
+    					<p class="mt-4">Grade: First class</p>
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2010-2013</span>
+    					<h2>Diploma in Computer Engineering</h2>
+    					<span class="position">SVPM’s ITE</span>
+    					<p class="mt-4">Grade: First class.</p>
+    				</div>
+				</div>
+    		</div>
+			
+			<!-- Gallery*/ -->
+			<div class="row">
+			<h1 class="big-4">Awards & Recognitions</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<div class="row">
+    			<div class="col-md-4">
+    				<div class="gallery">
+    <a target="_blank" href="images/a1.jpg">
+      <img src="images/a1.jpg" alt="Cinque Terre" width="600" height="400">
+    </a>
+  </div>
+    			</div>
+
+    			<div class="col-md-4">
+    				<div class="gallery">
+    <a target="_blank" href="images/a2.jpg">
+      <img src="images/a2.jpg" alt="Cinque Terre" width="600" height="400">
+    </a>
+  </div>
+				</div>
+
+				<div class="col-md-4">
+    				<div class="gallery">
+    <a target="_blank" href="images/a3.jpg">
+      <img src="images/a3.jpg" alt="Cinque Terre" width="600" height="400">
+    </a>
+  </div>
+				</div>
+
+    		</div>
+
+			<hr>
+			
+			<div class="row">
+    			<div class="col-md-4">
+    				<div class="gallery">
+    <a target="_blank" href="images/p1.jpg">
+      <img src="images/p1.jpg" alt="Cinque Terre" width="600" height="400">
+    </a>
+  </div>
+    			</div>
+
+    			<div class="col-md-4">
+    				<div class="gallery">
+    <a target="_blank" href="images/p2.jpg">
+      <img src="images/p2.jpg" alt="Cinque Terre" width="600" height="400">
+    </a>
+  </div>
+				</div>
+
+				<div class="col-md-4">
+    				<div class="gallery">
+    <a target="_blank" href="images/p3.jpg">
+      <img src="images/p3.jpg" alt="Cinque Terre" width="600" height="400">
+    </a>
+  </div>
+				</div>
+
+    		</div>
+
+			<hr>
+			
+			<div class="row">
+    			<div class="col-md-4">
+    				<div class="gallery">
+    <a target="_blank" href="images/c1.jpg">
+      <img src="images/c1.jpg" alt="Cinque Terre" width="600" height="400">
+    </a>
+  </div>
+    			</div>
+
+    			<div class="col-md-4">
+    				<div class="gallery">
+    <a target="_blank" href="images/e1.jpg">
+      <img src="images/e1.jpg" alt="Cinque Terre" width="600" height="400">
+    </a>
+  </div>
+				</div>
+
+				<div class="col-md-4">
+    				
+				</div>
+
+    		</div>
+
+    		
+    	</div>
+    </section>
+	  
+	  
+	 
+
+   
+
+    <section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Projects</h1>
+            <h2 class="mb-4">Completed Projects</h2>
+            <p>These Projects have helped me develop my Skills and understand the Industry better.</p>
+
+          </div>
+        </div>
+		
+        <div class="row d-flex">
+
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/yogeshnimbalkar07/Day1NesjtJsApp.git" target="_blank" class="block-20 zoom-effect" style="background-image: url('images/Nest_JS .jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/yogeshnimbalkar07/Day1NesjtJsApp.git">Deployed NestJS Hello World sample application on EC2 manually and implement CI-CD GitHub actions.</a></h3>
+                <p>Developed and deployed a scalable NestJS "Hello World" application on AWS EC2, leveraging GitHub Actions for a fully automated CI/CD pipeline. Utilized core AWS services, including EC2 for hosting, and IAM for secure access management, to build a resilient deployment pipeline. This setup enables continuous integration and delivery, ensuring seamless updates with minimal manual intervention. Demonstrated proficiency in AWS infrastructure, Git version control, and CI/CD automation, optimizing deployment time and ensuring high availability for a production-ready environment.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/yogeshnimbalkar07/StrapiApp.git" class="block-20 zoom-effect" style="background-image: url('images/strapi.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/yogeshnimbalkar07/StrapiApp.git">Deployed the Strapi API on an EC2 server manually.Implement CI/CD using GitHub Actions.</a></h3>
+				<p>Deployed a Strapi API on AWS EC2, configuring a secure environment and automating the deployment process using GitHub Actions. Implemented a CI/CD pipeline to streamline updates, ensuring efficient, reliable delivery with minimal manual intervention.</p>
+              </div>
+            </div>
+          </div>
+
+		<div class="col-md-4 d-flex ftco-animate">
+			<div class="blog-entry">
+			<a href="https://github.com/yogeshnimbalkar07/evafin.git" class="block-20 zoom-effect" style="background-image: url('images/docker.jpg')">
+			</a>
+			<div class="text mt-3 float-right d-block">
+
+			 <h3 class="heading"><a href="https://github.com/yogeshnimbalkar07/evafin.git">Deployed docker image in EC2 using terraform</a></h3>
+			  <p>Provisioned an AWS EC2 instance using Terraform and automated the deployment of a Docker container. Configured infrastructure as code (IaC) to streamline the setup, enabling efficient, reproducible deployments for containerized applications.</p>
+			</div>
+		  </div>
+		</div>
+	  </div>
+
+	<br>
+		<!-- added justify-content-center to center align the last two projects -->
+		 <div class="row d-flex justify-content-center">  
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/yogeshnimbalkar07/Strapi_Task3.git" class="block-20 zoom-effect" style="background-image: url('images/tf.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/yogeshnimbalkar07/Strapi_Task3.git">Developed a Terraform script to deploy the Strapi application </a></h3>
+				  <p>Developed a Terraform script to automate the deployment of a Strapi application, provisioning AWS resources and configuring a scalable environment. Utilized Infrastructure as Code (IaC) to simplify resource management, ensuring consistency, repeatability, and ease of deployment.</p>
+				</div>
+			  </div>
+			</div>
+
+
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="images\Route53.pdf" class="block-20 zoom-effect" style="background-image: url('images/r53.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+					<h3 class="heading"><a href="images\Route53.pdf">Created the sub-domain with your name in route53 and map the public ip to instance it should open the strapi admin page</a></h3>
+					<p>Configured a custom sub-domain in Route 53, mapped it to the public IP of an EC2 instance, and set up the Strapi application to be accessible via the sub-domain. Enabled streamlined access to the Strapi admin page, enhancing usability and user experience through precise domain routing.</p>
+				</div>
+			  </div>
+			</div>
+
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="#" class="block-20 zoom-effect" style="background-image: url('images/my.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="#">Portfolio website using HTML,CSS,JavaScript</a></h3>
+				  <p>Crafted with HTML, CSS, and JavaScript, my portfolio website serves as a dynamic showcase of my skills and projects. Explore a range of designs and functionalities, each demonstrating innovation and creativityDive into a world of creativity and innovation as you explore various projects, each a testament to my dedication and expertise in Full Stack development. From sleek designs to interactive elements, discover the artistry and functionality behind every page.</p>
+				</div>
+			  </div>
+			</div>
+
+		 </div> 
+	  </div>
+    </section>
+
+	 <section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+       <div class="container">
+		<div class="row d-md-flex align-items-center">
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="10">0</strong>
+                <span>Projects Completed</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="20">0</strong>
+                <span>Skills Mastered</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="5">0</strong>
+                <span>Awards & Recognitions</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="99">0</strong>
+                <span>Client Satisfaction Rate</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>  
+	
+	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg1.jpg)">
+		<!-- <div class="container"> -->			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>More projects on<span> Github  </span> </h2>
+					<div class="heading"> <h4>Dive into my GitHub universe, where every line of code tells a unique story.</h4>
+					<br>
+					<p><a href="https://github.com/yogeshnimbalkar07" target="_blank" class="btn btn-primary py-3 px-5">GitHub</a></p>
+					</div>
+				</div>
+			</div>
+		<!-- </div> -->
+	</div>
+	</section>
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h3 class="mb-4">Address</h3>
+	            <p>Pune, India</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+				  <p><a href="tel://8208421194">+91 8208421194</a></p>
+				</div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+				  <p><a href="mailto:yogesh.nimbalkar07@gmail.com">yogesh.nimbalkar07@gmail.com</a></p>
+
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-globe"></span>
+          		</div>
+          		<h3 class="mb-4">Resume</h3>
+	            <p><a href="images/Yogesh-AWSDevOps-CV.pdf" target="_blank">View Resume</a></p>
+	          </div>
+          </div>
+
+		  <div class="container">
+			<br>
+			<br>
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>Have a<span> Question?  </span> <a href="https://forms.gle/kYdU1UBcScaNjcQZ9" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
+				</div>
+			</div>
+				<br>
+					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+					  <li class="ftco-animate normal-txt">Find me on  </li>
+					
+					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/yogesh-nimbalkar-9930b1127/" target="_blank"><span class="icon-linkedin"></span></a></li>  
+							  <li class="ftco-animate"><a href="https://www.behance.net/yogeshnimbalkar" target="_blank"><span class="icon-behance"></span></a></li>
+							  <li class="ftco-animate"><a href="https://github.com/yogeshnimbalkar07" target="_blank"><span class="icon-github"></span></a></li>
+							  <li class="ftco-animate"><a href="https://www.instagram.com/nimbalkar_ya/" target="_blank"><span class="icon-instagram"></span></a></li>
+					</ul>
+				<br>
+		   </div>
+   </div>
+ </section>
+
+
+ 
+	
+   
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+  </body>
+</html>
